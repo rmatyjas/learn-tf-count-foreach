@@ -4,6 +4,48 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
+# variable "project_name" {
+#   description = "Name of the project. Used in resource names and tags."
+#   type        = string
+#   default     = "client-webapp"
+# }
+
+# variable "environment" {
+#   description = "Value of the 'Environment' tag."
+#   type        = string
+#   default     = "dev"
+# }
+
+# variable "instances_count" {
+#   description = "Number of public subnets. Maximum of 16."
+#   type        = number
+#   default     = 3
+# }
+
+# variable "public_subnets_per_vpc" {
+#   description = "Number of public subnets. Maximum of 16."
+#   type        = number
+#   default     = 2
+# }
+
+# variable "private_subnets_per_vpc" {
+#   description = "Number of private subnets. Maximum of 16."
+#   type        = number
+#   default     = 2
+# }
+
+# variable "instances_per_subnet" {
+#   description = "Number of EC2 instances in each private subnet"
+#   type        = number
+#   default     = 2
+# }
+
+# variable "instance_type" {
+#   description = "Type of EC2 instance to use."
+#   type        = string
+#   default     = "t2.micro"
+# }
+
 variable "project" {
   description = "Map of project names to configuration."
   type        = map(any)
