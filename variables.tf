@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-central-1"
 }
 
 # variable "project_name" {
@@ -51,16 +51,16 @@ variable "project" {
   type        = map(any)
   default = {
     client-webapp = {
-      public_subnets_per_vpc  = 2,
-      private_subnets_per_vpc = 2,
-      instances_per_subnet    = 2,
+      public_subnets_per_vpc  = 1,
+      private_subnets_per_vpc = 1,
+      instances_per_subnet    = 1,
       instance_type           = "t2.micro",
       environment             = "dev"
     },
     internal-webapp = {
       public_subnets_per_vpc  = 1,
       private_subnets_per_vpc = 1,
-      instances_per_subnet    = 2,
+      instances_per_subnet    = 1,
       instance_type           = "t2.nano",
       environment             = "test"
     }
